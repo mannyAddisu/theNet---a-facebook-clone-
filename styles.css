@@ -309,7 +309,7 @@ nav {
   width: fit-content;
 }
 .staus-audience p {
-  color: var(--p-color);
+  color: #626262;
 }
 .staus-audience select {
   color: var(--p-color);
