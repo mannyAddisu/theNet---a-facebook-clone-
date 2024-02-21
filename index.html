@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>theNet - A Front-end project</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/0caa12f42f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="navLeft">
+        <img src="images/theNet-logo2.png" class="logo" alt="logo" />
+        <ul>
+          <li><img src="images/notification.png" alt="" /></li>
+          <li><img src="images/inbox.png" alt="" /></li>
+          <li><img src="images/video.png" alt="" /></li>
+        </ul>
+      </div>
+
+      <div class="navRight">
+        <div class="search-box">
+          <img src="images/search.png" alt="search" />
+          <input type="text" placeholder="Search" />
+        </div>
+
+        <div class="nav-user-icon online" onclick="settingsToggle()">
+          <img src="images/profilepic.png" alt="profile" />
+        </div>
+      </div>
+
+      <div class="settings-menu">
+        <div id="dark-btn" class="dark-btn-on" onclick="darkMode()">
+          <span></span>
+        </div>
+        <div class="audience-bar">
+          <div class="statusImage">
+            <a href="#" style="margin-bottom: 0px">
+              <img src="images/profilepic.png" style="margin: 10px" />
+            </a>
+          </div>
+          <div class="staus-audience">
+            <p>Amanuel A.</p>
+            <a href="#">See your profile</a>
+          </div>
+        </div>
+        <hr style="border: 0; height: 0.1px" />
+        <div class="audience-bar">
+          <img src="images/feedback.png" style="margin: 10px" />
+          <div class="staus-audience">
+            <p>Give Feedback</p>
+            <a href="#">Help us improve the new design</a>
+          </div>
+        </div>
+        <hr />
+
+        <div class="setting-links">
+          <img src="images/setting.png" alt="setting" class="setting-icon" />
+          <a href="#"
+            >Settings & Privacy
+            <img src="images/arrow.png" alt="arrow" width="10px"
+          /></a>
+        </div>
+        <div class="setting-links">
+          <img src="images/help.png" alt="help" class="setting-icon" />
+          <a href="#"
+            >Help & Support
+            <img src="images/arrow.png" alt="arrow" width="10px"
+          /></a>
+        </div>
+        <div class="setting-links">
+          <img
+            src="images/display.png"
+            alt="display-image"
+            class="setting-icon"
+          />
+          <a href="#"
+            >Display & Accessibility
+            <img src="images/arrow.png" alt="arrow" width="10px"
+          /></a>
+        </div>
+        <div class="setting-links">
+          <img src="images/logout.png" alt="logout" class="setting-icon" />
+          <a href="#"
+            >Logout <img src="images/arrow.png" alt="arrow" width="10px"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!------------ L-sidebar------- -->
+      <div class="left-sidebar">
+        <div class="imp-links">
+          <a href="#"><img src="images/news.png" alt="news" />Latest News</a>
+          <a href="#"><img src="images/friends.png" alt="friends" />Friends</a>
+          <a href="#"><img src="images/group.png" alt="groups" />Groups</a>
+          <a href="#">
+            <img src="images/marketplace.png" alt="marketplace" />Marketplace
+          </a>
+          <a href="#"><img src="images/watch.png" alt="watch" /> Watch</a>
+          <a href="#">See More</a>
+        </div>
+        <div class="shortcut-links">
+          <p>Your Shortcuts</p>
+          <a href="#"
+            ><img src="images/shortcut-1.png" alt="img" />Web Developers</a
+          >
+          <a href="#"
+            ><img src="images/shortcut-2.png" alt="img" />Web Design Course</a
+          >
+          <a href="#"
+            ><img src="images/shortcut-3.png" alt="img" />Front End
+            Development</a
+          >
+          <a href="#"
+            ><img src="images/shortcut-4.png" alt="img" />Manuel the noob</a
+          >
+        </div>
+      </div>
+
+      <!------------ -------------Main Content----------------------------->
+
+      <div class="main-content">
+        <div class="stories">
+          <div class="story-item">
+            <img src="images/upload.png" id="upload-button" />
+            <p>Post Story</p>
+          </div>
+          <div class="story-item story1">
+            <img src="images/member-3.png " />
+            <p>Bethlehem</p>
+          </div>
+          <div class="story-item story2">
+            <img src="images/shortcut-4.png " />
+            <p>John</p>
+          </div>
+          <div class="story-item story3">
+            <img src="images/member-5.png " />
+            <p>Marcus</p>
+          </div>
+          <div class="story-item story4">
+            <img src="images/member-6.png " />
+            <p>Draya</p>
+          </div>
+        </div>
+
+        <div class="post-area">
+          <div class="audience-bar">
+            <div class="statusImage">
+              <a href="#" style="margin-bottom: 0px">
+                <img src="images/profilepic.png" />
+              </a>
+            </div>
+            <div class="staus-audience">
+              <a href="">Amanuel A.</a>
+              <select name="posting option">
+                <option value="x" selected>Public ▾</option>
+                <option value="y">Private</option>
+              </select>
+            </div>
+          </div>
+          <div class="post-writing">
+            <textarea
+              name=""
+              id="scroll"
+              cols="45"
+              rows="4"
+              placeholder="What's on your mind?"
+            ></textarea>
+            <hr />
+            <div class="post-options">
+              <a href="">
+                <div class="post-option1">
+                  <div><img src="images/live-video.png" alt="live" /></div>
+                  Live Video
+                </div>
+              </a>
+              <a href="">
+                <div class="post-option2">
+                  <div><img src="images/photo.png" alt="live" /></div>
+                  Photo/Video
+                </div>
+              </a>
+              <a href="">
+                <div class="post-option3">
+                  <div><img src="images/feeling.png" alt="live" /></div>
+                  Feeling/Activity
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="feed">
+          <div class="post-row">
+            <div class="post-profile">
+              <img src="images/profilepic.png" class="" />
+              <div>
+                <p>Amanuel A.</p>
+                <span>Addis Ababa, Ethiopia</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </div>
+          <div class="posts">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              dolore <strong>quod officia</strong> ut eum sed consequuntur quia
+              deserunt, sequi pariatur.
+              <span>#Aman #myLogo #graphics</span>
+            </p>
+            <img src="images\post3.jpg" />
+          </div>
+          <div class="activity-bar">
+            <img src="images/like-blue.png" alt="like" />120
+            <img
+              src="images/comments.png"
+              alt="comment"
+              style="margin-top: 7px"
+            />10 <img src="images/share.png" alt="share" />2
+          </div>
+        </div>
+        <div class="feed">
+          <div class="post-row">
+            <div class="post-profile">
+              <img src="images/profilepic.png" class="" />
+              <div>
+                <p>Amanuel A.</p>
+                <span>Addis Ababa, Ethiopia</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </div>
+          <div class="posts">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              dolore <strong>quod officia</strong> ut eum sed consequuntur quia
+              deserunt, sequi pariatur.
+              <span>#whatAView #photography</span>
+            </p>
+            <img src="images\post1.jpg" />
+          </div>
+          <div class="activity-bar">
+            <img src="images/like-blue.png" alt="like" />124
+            <img
+              src="images/comments.png"
+              alt="comment"
+              style="margin-top: 7px"
+            />12 <img src="images/share.png" alt="share" />4
+          </div>
+        </div>
+
+        <div class="feed">
+          <div class="post-row">
+            <div class="post-profile">
+              <img src="images/profilepic.png" class="" />
+              <div>
+                <p>Amanuel A.</p>
+                <span>Addis Ababa, Ethiopia</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </div>
+          <div class="posts">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              dolore <strong>quod officia</strong> ut eum sed consequuntur quia
+              deserunt, sequi pariatur.
+              <span>#productivity #teamwork #buildsum</span>
+            </p>
+            <img src="images\post2.jpg" />
+          </div>
+          <div class="activity-bar">
+            <img src="images/like.png" alt="like" />120
+            <img
+              src="images/comments.png"
+              alt="comment"
+              style="margin-top: 7px"
+            />10 <img src="images/share.png" alt="share" />2
+          </div>
+        </div>
+
+        <div class="feed">
+          <div class="post-row">
+            <div class="post-profile">
+              <img src="images/profilepic.png" class="" />
+              <div>
+                <p>Amanuel A.</p>
+                <span>Addis Ababa, Ethiopia</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </div>
+          <div class="posts">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              dolore <strong>quod officia</strong> ut eum sed consequuntur quia
+              deserunt, sequi pariatur.
+              <span>#letsgrind</span>
+            </p>
+            <img src="images\post4.jpg" />
+          </div>
+          <div class="activity-bar">
+            <img src="images/like.png" alt="like" />120
+            <img
+              src="images/comments.png"
+              alt="comment"
+              style="margin-top: 7px"
+            />10 <img src="images/share.png" alt="share" />2
+          </div>
+        </div>
+
+        <button type="button" class="load-more-btn">Load More</button>
+      </div>
+      <!------------ -------------R-sidebar----------------------------->
+      <div class="right-sidebar">
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <a href="#">See All</a>
+        </div>
+
+        <div class="event">
+          <div class="left-event">
+            <h3>18</h3>
+            <span>March</span>
+          </div>
+          <div class="right-event">
+            <h4>Social Media</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Bole Rwanda</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>22</h3>
+            <span>June</span>
+          </div>
+          <div class="right-event">
+            <h4>Web Development</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Bole Rwanda</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+
+        <div class="sidebar-title">
+          <h4>Advertisement</h4>
+          <a href="#">Close</a>
+        </div>
+        <div class="ad">
+          <img src="images/advertisement.png" alt="ad" />
+        </div>
+        <div class="sidebar-title">
+          <h4>Conversation</h4>
+          <a href="#">Hide Chat</a>
+        </div>
+        <div class="chats">
+          <div class="online">
+            <a href="#"
+              ><img src="images/member-3.png" alt="img" /> Bethlehem E.</a
+            >
+          </div>
+          <div class="online">
+            <a href="#"
+              ><img src="images/shortcut-4.png" alt="img" /> John Doe</a
+            >
+          </div>
+          <div class="online">
+            <a href="#"
+              ><img src="images/member-5.png" alt="img" /> Marcus A.</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright 2024 - Made with ❤️ by Aman</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
