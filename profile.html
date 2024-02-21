@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile - theNet - A Front-end project</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/0caa12f42f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="navLeft">
+        <img src="images/theNet-logo2.png" class="logo" alt="logo" />
+        <ul>
+          <li><img src="images/notification.png" alt="" /></li>
+          <li><img src="images/inbox.png" alt="" /></li>
+          <li><img src="images/video.png" alt="" /></li>
+        </ul>
+      </div>
+
+      <div class="navRight">
+        <div class="search-box">
+          <img src="images/search.png" alt="search" />
+          <input type="text" placeholder="Search" />
+        </div>
+
+        <div class="nav-user-icon online" onclick="settingsToggle()">
+          <img src="images/profilepic.png" alt="profile" />
+        </div>
+      </div>
+
+      <div class="settings-menu">
+        <div id="dark-btn" class="dark-btn-on" onclick="darkMode()">
+          <span></span>
+        </div>
+        <div class="audience-bar">
+          <div class="statusImage">
+            <a href="#" style="margin-bottom: 0px">
+              <img src="images/profilepic.png" style="margin: 10px" />
+            </a>
+          </div>
+          <div class="staus-audience">
+            <p>Amanuel A.</p>
+            <a href="#">See your profile</a>
+          </div>
+        </div>
+        <hr style="border: 0; height: 0.1px" />
+        <div class="audience-bar">
+          <img src="images/feedback.png" style="margin: 10px" />
+          <div class="staus-audience">
+            <p>Give Feedback</p>
+            <a href="#">Help us improve the new design</a>
+          </div>
+        </div>
+        <hr />
+
+        <div class="setting-links">
+          <img src="images/setting.png" alt="setting" class="setting-icon" />
+          <a href="#"
+            >Settings & Privacy
+            <img src="images/arrow.png" alt="arrow" width="10px"
+          /></a>
+        </div>
+        <div class="setting-links">
+          <img src="images/help.png" alt="help" class="setting-icon" />
+          <a href="#"
+            >Help & Support
+            <img src="images/arrow.png" alt="arrow" width="10px"
+          /></a>
+        </div>
+        <div class="setting-links">
+          <img
+            src="images/display.png"
+            alt="display-image"
+            class="setting-icon"
+          />
+          <a href="#"
+            >Display & Accessibility
+            <img src="images/arrow.png" alt="arrow" width="10px"
+          /></a>
+        </div>
+        <div class="setting-links">
+          <img src="images/logout.png" alt="logout" class="setting-icon" />
+          <a href="#"
+            >Logout <img src="images/arrow.png" alt="arrow" width="10px"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <!------------------ profile-container ------------------->
+
+    <div class="profile-container">
+      <img src="images/cover1.jpg" alt="cover-image" class="cover" />
+
+      <div class="profile-details-container">
+        <div class="profile-details-left">
+          <img src="images/profilepic.png" alt="profile" class="profile-img" />
+          <div class="profile-details">
+            <p id="name">Amanuel Addisu</p>
+            <p>230 Friends</p>
+            <div class="friend-images">
+              <img src="images/member-3.png" alt="friend" />
+              <img src="images/shortcut-4.png" alt="friend" />
+              <img src="images/member-5.png" alt="friend" />
+            </div>
+          </div>
+        </div>
+        <div class="profile-details-right">
+          <div class="profile-btn">
+            <button class="add-friend">
+              <img src="images/add-friends.png" alt="add-friends" />Friend
+            </button>
+            <button class="message">
+              <img src="images/message.png" alt="" />Message
+            </button>
+          </div>
+          <button id="more"><img src="images/more.png" alt="" /></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Copyright 2024 - Made with ❤️ by Aman</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
