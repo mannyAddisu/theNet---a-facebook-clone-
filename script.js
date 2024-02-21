@@ -4,6 +4,7 @@ const darkBtn = document.getElementById("dark-btn");
 function settingsToggle() {
   settingsMenu.classList.toggle("settings-menu-height");
 }
+
 document.addEventListener("keydown", function (e) {
   if (
     e.key === "Escape" &&
@@ -12,6 +13,16 @@ document.addEventListener("keydown", function (e) {
     settingsMenu.classList.remove("settings-menu-height");
   }
 });
+
+window.addEventListener("click", function (e) {
+  if (
+    !settingsMenu.contains(e.target) &&
+    !document.querySelector(".nav-user-icon").contains(e.target)
+  ) {
+    settingsMenu.classList.remove("settings-menu-height");
+  }
+});
+
 function darkMode() {
   darkBtn.classList.toggle("dark-btn-on");
   document.body.classList.toggle("dark-theme");
@@ -39,4 +50,3 @@ if (localStorage.getItem("theme") == "light") {
 
 // localStorage.setItem("theme", "light");
 // localStorage.getItem("theme");
-//test
