@@ -28,6 +28,9 @@ body {
   background-color: var(--body-color);
   transition: background 0.3s;
 }
+/* a:hover {
+  font-weight: 700;
+} */
 /************NAVBAR************/
 nav {
   display: flex;
@@ -365,7 +368,6 @@ hr {
   margin-bottom: 20px;
   color: #626262;
   width: fit-content;
-  /* text-align: center; */
   padding-right: 15px;
   font-size: 12px;
   font-weight: 500;
@@ -554,12 +556,15 @@ hr {
   border-radius: 50%;
   display: inline-block;
 }
-.profile-details #name {
+.profile-details #name,
+.name {
   font-size: larger;
   font-weight: 600;
   color: #626262;
 }
-.profile-details p {
+.profile-details p,
+.intro-p,
+.infos a {
   font-size: 15px;
   margin-bottom: 8px;
   color: #9a9a9a;
@@ -575,8 +580,10 @@ hr {
   margin: 0 7px;
   padding: 8px;
   border: none;
+  outline: 0;
   border-radius: 5px;
-  width: auto;
+  cursor: pointer;
+  /* width: auto; */
 }
 .profile-btn img {
   width: 20px;
@@ -596,4 +603,43 @@ hr {
 .profile-btn .message {
   background: var(--msg-btn-color);
   color: #fff;
+}
+.profile-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.info-col {
+  flex-basis: 33%;
+}
+.post-col {
+  flex-basis: 65%;
+}
+.profile-intro {
+  align-items: center;
+  background: var(--bg-color);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.intro-p {
+  text-align: center;
+  margin: 10px 0;
+}
+.profile-intro hr {
+  width: unset;
+  margin-bottom: 20px;
+}
+.name {
+  text-indent: 5.5px;
+}
+.info-col img {
+  width: 25px;
+  margin: 8px;
+}
+.infos a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
