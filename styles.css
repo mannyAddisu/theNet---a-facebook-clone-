@@ -566,7 +566,7 @@ hr {
 }
 .profile-details #name,
 .name {
-  font-size: larger;
+  font-size: 19px;
   font-weight: 600;
   color: #626262;
 }
@@ -750,5 +750,40 @@ hr {
   }
   .post-writing {
     padding-left: 20px;
+  }
+}
+/********************Profile page********************/
+@media (max-width: 900px) {
+  .profile-container {
+    padding: 20px 5%;
+  }
+  .profile-details-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile-details-right {
+    align-items: flex-start;
+    padding: 0;
+    gap: 10px;
+    margin: 0 0 16px 16px;
+  }
+  .profile-details-right button {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  .profile-details #name,
+  .name {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .profile-info {
+    flex-wrap: wrap;
+  }
+  .info-col {
+    flex-basis: 100%;
+  }
+  .post-col {
+    flex-basis: 100%;
   }
 }
