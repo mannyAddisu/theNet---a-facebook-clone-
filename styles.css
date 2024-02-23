@@ -751,6 +751,10 @@ hr {
   .post-writing {
     padding-left: 20px;
   }
+  #upload-button {
+    width: 25px;
+    bottom: 25px;
+  }
 }
 /********************Profile page********************/
 @media (max-width: 900px) {
