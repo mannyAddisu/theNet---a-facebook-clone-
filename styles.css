@@ -643,3 +643,21 @@ hr {
   align-items: center;
   text-decoration: none;
 }
+.photo-gallery-header {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.photo-gallery-header a {
+  text-decoration: none;
+  color: #1876f2;
+}
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.photos img {
+  width: 100px;
+  /* height: 100px; */
+}
