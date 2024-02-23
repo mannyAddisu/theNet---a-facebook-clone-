@@ -786,4 +786,7 @@ hr {
   .post-col {
     flex-basis: 100%;
   }
+  .post-profile p {
+    margin-bottom: -5px;
+  }
 }
