@@ -564,7 +564,8 @@ hr {
 }
 .profile-details p,
 .intro-p,
-.infos a {
+.infos a,
+.friends p {
   font-size: 15px;
   margin-bottom: 8px;
   color: #9a9a9a;
@@ -645,7 +646,7 @@ hr {
 }
 .photo-gallery-header {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
 }
@@ -655,9 +656,24 @@ hr {
 }
 .photos {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
+  align-items: stretch;
 }
 .photos img {
-  width: 100px;
-  /* height: 100px; */
+  width: 100%;
+}
+.friends {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.friends p {
+  align-self: flex-start;
+}
+.friends img {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
 }
