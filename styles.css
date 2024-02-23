@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -356,28 +357,29 @@ hr {
 }
 .post-options {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.post-option-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+.post-option1 {
+  display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
 }
 .post-options img {
   width: 20px;
-  margin-right: 10px;
+  margin-right: 7px;
 }
 .post-options a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  margin-bottom: 20px;
   color: #626262;
-  width: fit-content;
   padding-right: 15px;
   font-size: 12px;
-  font-weight: 500;
-}
-.post-option1,
-.post-option2,
-.post-option3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .feed {
   width: 100%;
@@ -431,11 +433,17 @@ hr {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 15px;
+  padding-left: 24px;
+  padding-bottom: 12px;
+}
+.like {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
 }
 .activity-bar img {
   width: 20px;
-  margin: 0 10px 10px;
+  margin-right: 5px;
 }
 .post-profile img {
   width: 40px;
@@ -678,4 +686,69 @@ hr {
   width: 100%;
   border-radius: 5px;
   margin-top: 0;
+}
+/***************************Responsiveness***************************/
+@media (max-width: 900px) {
+  .right-sidebar {
+    display: none;
+  }
+  .left-sidebar {
+    display: none;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+  .search-box {
+    display: none;
+  }
+  .logo {
+    width: 100px;
+    margin-right: 20px;
+  }
+  .navLeft ul li img {
+    width: 20px;
+    margin: 0 6px;
+  }
+  .nav-user-icon {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .nav-user-icon img {
+    width: 30px;
+  }
+  .main-content {
+    flex-basis: 100%;
+  }
+  textarea {
+    width: 200px;
+  }
+  .post-option-container {
+    align-items: flex-end;
+    margin-right: 25px;
+  }
+  .post-options a {
+    flex-direction: column;
+    margin-right: 8px;
+    padding: 0;
+    font-size: 9px;
+  }
+  .post-options img {
+    margin-bottom: 4px;
+  }
+  .post-option1 {
+    flex-basis: 34%;
+  }
+  #live {
+    margin-top: 1px;
+  }
+  .story-item img {
+    width: 30px;
+    border-width: 3px;
+  }
+  .story-item p {
+    font-size: 10px;
+  }
+  .post-writing {
+    padding-left: 20px;
+  }
 }
